@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">Doan Van Thu Nhat.</p>
+        <p id="p2">Doan Van Thu Hai.</p>
+    </div>
+    <script>
+        const p3 = document.createElement("p");
+        p3.innerHTML="Doan Van Thu Ba";
+
+        const mydiv = document.getElementById("div1");
+        mydiv.insertBefore(p3,p2);
+
+        const p1 = document.getElementById("p1");
+        p1.remove();
+    </script>
+</body>
+</html>
